@@ -6,10 +6,10 @@ class color:
 	blue = '\033[36m'
 	reset = '\033[0m'
 
-print(color.purple + "App name: " + color.reset + "Combo Fixer")
+print(color.purple + "App name: " + color.reset + "Combo List Fixer")
 print(color.purple + "Version: " + color.reset + "1.2")
 print(color.purple + "Developer: " + color.reset + "hamid0740")
-print(color.purple + "GitHub: " + color.reset + "https://github.com/hamid0740/Combo-Fixer" + "\n")
+print(color.purple + "GitHub: " + color.reset + "https://github.com/hamid0740/Combo-List-Fixer" + "\n")
 
 print(color.blue + "Make sure that this Python code is in the same directory with the combo list you want to fix.")
 file_name = input(color.yellow + "Enter your file name: " + color.reset)
