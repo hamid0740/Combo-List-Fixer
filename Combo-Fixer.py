@@ -36,10 +36,9 @@ for i in range(line_count):
 			data[i] = head
 		line_fixed += 1
 
-with open("output.txt", 'w') as file:
-	file.writelines(data)
-
 if line_fixed != 0:
-	print(color.green + "Successfully edited " + str(line_fixed) + " out of " + str(line_count) + " lines in the '" + file_name + "'' file.\nFixed file has been saved as 'output.txt'." + color.reset)
+	with open("output.txt", 'w') as file:
+		file.writelines(data)
+	print(color.green + "Successfully edited " + str(line_fixed) + " out of " + str(line_count) + " lines in the '" + file_name + "' file.\nFixed file has been saved as '" + color.red + "output.txt" + color.green + "'." + color.reset)
 else:
-	print(color.red + "No lines has been edited. Try changing the separator or note that your combo list may not have any problems." + color.reset)
+	print(color.red + "No lines has been edited.\n Try changing the separator or note that your combo list may not have any problems." + color.reset)
