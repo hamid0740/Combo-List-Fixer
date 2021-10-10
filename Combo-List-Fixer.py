@@ -44,10 +44,10 @@ else:
 	print(color.red + "No line has been edited.\nTry changing the separator or note that your combo list may not have any problems." + "\n")
 
 #Asking to remove duplicate lines
-to_rem_dup = input(color.yellow + "Do you also want to remove duplicate combos? (y/n): " + color.reset)
+to_rem_dup = input(color.yellow + "Do you also want to remove duplicate combos? (y/n): " + color.reset).lower()
 
 #Removing duplicate lines
-if to_rem_dup.lowercase().startswith("y"):
+if to_rem_dup.startswith("y"):
 	temp_data = []
 	for i in data:
 		if i not in temp_data:
